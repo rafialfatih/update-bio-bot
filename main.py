@@ -10,7 +10,6 @@ load_dotenv()
 sys.stdin.reconfigure(encoding='utf-8')
 sys.stdout.reconfigure(encoding='utf-8')
 
-all_keys = open('keys', 'r').read().splitlines()
 consumer_key = os.getenv('CONSUMER_KEY')
 consumer_secret = os.getenv('CONSUMER_SECRET_KEY')
 access_token = os.getenv('ACCESS_TOKEN')
