@@ -37,7 +37,7 @@ while True:
           if reply.id_str not in open('replies_tweet', 'r').read().splitlines():
               open('replies_tweet', 'a').write(reply.id_str+'\n')
               api.update_profile(description=replies[0].text + '\n\n- diperbarui oleh @' + replies[0].user.screen_name)
-              print('success')
+              print('berhasil memperbarui profile')
               time.sleep(30)
 
           else:
