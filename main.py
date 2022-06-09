@@ -27,7 +27,7 @@ while True:
 
       replies=[]
 
-      time.sleep(10)
+      time.sleep(1)
       for tweet in api.search_tweets(q='to:'+name, result_type='recent'):
           if hasattr(tweet, 'in_reply_to_status_id_str'):
               if (tweet.in_reply_to_status_id_str==tweet_id):
