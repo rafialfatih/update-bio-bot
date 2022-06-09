@@ -44,4 +44,5 @@ while True:
 
     except IndexError:
         print('gagal memperbarui profile')
-        exit
+        time.sleep(30)
+        continue
