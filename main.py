@@ -22,8 +22,8 @@ api = tweepy.API(auth, wait_on_rate_limit=True)
 
 while True:
     try:
-      name = 'rafialfatih'
-      tweet_id = '1534527029609017347'
+      name = os.getenv('USERNAME')
+      tweet_id = os.getenv('TWEET_ID')
 
       replies=[]
 
